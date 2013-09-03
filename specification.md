@@ -18,7 +18,22 @@
 ## Klikkteller:
 Legges inn av annonseutvikler og følgende metode må brukes:
 
-	<div id="Banner" onclick="window.open('http://www.url.no','new_window');" style="display:block;">
+	<div id="Banner" data-responsive="225h" onclick="window.open('http://www.url.no','new_window');">
+
+## Default styling av Banner
+
+div-elementet skal kun ha følgende styling:
+
+    display: block;
+    position: static; /* browser default */
+    width: 100%;
+    height: 225px;
+
+Er det behov for annen styling på elementet, bruk en ny div/element inni Banner. f.eks.
+
+    <div id="Banner" data-responsive="225h" onclick="window.open('http://www.url.no','new_window');" style="display:block;width:100%;height: 225px;">
+        <div style="position:relative;"></div>
+    </div>  
 
 ## Tredjepartskode:
 * Sendes over som Javascript-kode
