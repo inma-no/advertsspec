@@ -1,12 +1,10 @@
-## Physical size
-* Height: 225px
-* Width: 
+
 ## Fysisk størrelse
 * Høyde: 225px
 * Bredde: 100%
 * Størrelse (kb):
-** Maks 100 kb i arkivert tilstand (alle filer komprimert/zippet sammen).
-** Du kan benytte jQuery-biblioteket uten å medregne det i størrelsen på reklamen. Men dette krever at du benytter siste versjon av jQuery.min.js fra [Googles CDN-tjeneste](https://developers.google.com/speed/libraries/devguide#jquery) (f.eks [jQuery 2.0.0](//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js))
+	- Maks 100 kb i arkivert tilstand (alle filer komprimert/zippet sammen).
+	- Du kan benytte jQuery-biblioteket uten å medregne det i størrelsen på reklamen. Men dette krever at du benytter siste versjon av jQuery.min.js fra [Googles CDN-tjeneste](https://developers.google.com/speed/libraries/devguide#jquery) (f.eks [jQuery 2.0.0](//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js))
 
 ## Begrensninger
 * Viewport kan ikke settes til device width i reklamen 
