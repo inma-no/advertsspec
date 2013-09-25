@@ -2,9 +2,9 @@
 ## Fysisk størrelse
 * Høyde: 225px
 * Bredde: 100%
-* Størrelse (kb):
+* Størrelse:
 	- Maks 100 kb i arkivert tilstand (alle filer komprimert/zippet sammen).
-	- Du kan benytte jQuery-biblioteket uten å medregne det i størrelsen på reklamen. Men dette krever at du benytter siste versjon av jQuery.min.js fra [Googles CDN-tjeneste](https://developers.google.com/speed/libraries/devguide#jquery) (f.eks [jQuery 2.0.0](//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js))
+	- Du kan benytte jQuery-biblioteket uten å medregne det i størrelsen på reklamen. Men dette krever at du benytter siste versjon av jQuery.min.js fra [Googles CDN-tjeneste](https://developers.google.com/speed/libraries/devguide#jquery) (f.eks [jQuery 2.0.0](http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js))
 
 ## Begrensninger
 * Viewport kan ikke settes til device width i reklamen 
@@ -14,7 +14,10 @@
 * Bruk av innebygd geo-lokasjon er ikke tillatt
 * HTML-filen skal kun bestå av én fil som inkluderer all css
 * Maksimum 2 requests til JavaScript-bibliotek (en lokal og en ekstern).
-* Animasjon i reklamen før bruker har interagert med den, må være av typen CSS3 (dvs GPU-basert). JavaScript-animasjon (eks jQuery) er ikke tillatt før bruker berører reklamen (for eksempel på sveip). For tutorial og eksempler på CSS3-animasjoner, se [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations)
+* Animasjon i reklamen før bruker har interagert med den, må være av typen CSS3 (dvs GPU-basert). For tutorial og eksempler på CSS3-animasjoner, se [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations)
+ * JavaScript-animasjon (eks jQuery.animate eller kall til setTimeout) er ikke tillatt før bruker berører reklamen (for eksempel på sveip eller berøring)
+ * Bruk av _requestAnimationFrame_ kan ikke brukes, da det ødelegger interaksjon på sider der banneren inkluderes
+* Referanser til ressurser må ha http:// og ikke // pga begrensninger i leveransesystemet
 
 ## Klikkteller:
 Legges inn av annonseutvikler og følgende metode må brukes:
@@ -25,7 +28,7 @@ Legges inn av annonseutvikler og følgende metode må brukes:
 
 div-elementet skal kun ha følgende styling:
 
-    display: block;
+    display: block; /* browser default */
     position: static; /* browser default */
     width: 100%;
     height: 225px;
@@ -36,7 +39,7 @@ Er det behov for annen styling på elementet, bruk en ny div/element inni Banner
         <div style="position:relative;"></div>
     </div>  
 
-## Tredjepartskode
+# Tredjepartskode
 * Sendes over som Javascript-kode
 
 ## Bruk av gamle formater
