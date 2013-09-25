@@ -15,9 +15,7 @@
         font-family: Arial, sans-serif;
         color: #000;
         font-size: 28px;
-        position: relative;
         
-        cursor: pointer;
         background: #f0f0f0;
     }
 
@@ -97,9 +95,12 @@
 
 </head>
 <body>
-<a class="container" data-responsive="225h" href="http://somesite.goes.here/" target="new_window">
-    <div class="c animItem textOne">Product A is now available!</div>
-    <div class="c animItem textTwo animReverse">Get it while it's hot</div>
-</a>
+<div id="Banner"  data-responsive="225h" onclick="window.open('http://www.url.no','new_window');" style="display:block;width:100%;height: 225px;">
+
+    <div class="container" style="position:relative;">
+        <div class="c animItem textOne">Product A is now available!</div>
+        <div class="c animItem textTwo animReverse">Get it while it's hot</div>
+    </div>    
+</div>      
 </body>
 </html>
