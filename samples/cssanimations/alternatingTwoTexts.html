@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>sample banner</title>
+    <style>
+    body, html {
+        background: #fff
+    }
+
+    .container {
+        display: block;
+        width: 100%;
+        height: 225px;
+        font-family: Arial, sans-serif;
+        color: #000;
+        font-size: 28px;
+        
+        background: #f0f0f0;
+    }
+
+    .container>* {
+        position: absolute;
+    }
+    img {border:0px;}
+
+    .animItem {
+        top: 50%;
+        left: 50%
+    }
+
+    .animItem {
+        text-align: center;
+        text-decoration: none;
+        opacity: 0;
+
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 6s;
+        -webkit-animation-timing-function: ease; 
+        -webkit-animation-delay:.3s;
+        -webkit-animation-iteration-count: infinite;
+
+        -moz-animation-name: fade;
+        -moz-animation-duration: 6s;
+        -moz-animation-timing-function: ease; 
+        -moz-animation-delay:.3s;
+        -moz-animation-iteration-count: infinite;
+
+        animation-name: fade;
+        animation-duration: 6s;
+        animation-timing-function: ease; 
+        animation-delay:.3s;
+        animation-iteration-count: infinite;        
+
+    }
+    .textOne {
+        width: 280px;
+        margin-left: -140px;
+        margin-top: -60px;
+    }
+
+    .textTwo {
+        width: 500px;
+        margin-left: -250px;
+        margin-top: -60px;
+    }
+    .animReverse {
+        -webkit-animation-direction: reverse;
+        -moz-animation-direction: reverse;
+        animation-direction: reverse;
+    }
+    
+    @-webkit-keyframes fade {
+        0%,50%,100% { opacity: 0;}
+        10%,45% { opacity: 1;}
+    }
+    @-moz-keyframes fade {
+        0%,50%,100% { opacity: 0;}
+        10%,45% { opacity: 1;}
+    }
+    @keyframes fade {
+        0%,50%,100% { opacity: 0;}
+        10%,45% { opacity: 1;}
+    }
+
+
+    </style>
+    <!--[if lt IE 10]>
+    <style>
+    .textTwo {
+        opacity: 1;
+    }
+    </style>
+    <![endif]-->
+
+</head>
+<body>
+<div id="Banner"  data-responsive="225h" onclick="window.open('http://www.url.no','new_window');" style="display:block;width:100%;height: 225px;">
+
+    <div class="container" style="position:relative;">
+        <div class="c animItem textOne">Product A is now available!</div>
+        <div class="c animItem textTwo animReverse">Get it while it's hot</div>
+    </div>    
+</div>      
+</body>
+</html>
