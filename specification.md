@@ -26,6 +26,8 @@ Legges inn av annonseutvikler og følgende metode må brukes:
 
 ## Default styling av Banner
 
+CSS regler skal kun settes på klasser eller IDer. Det er ikke lov å angi stiler direkte på elementer slik som for eksempel span eller div.
+
 div-elementet skal kun ha følgende styling:
 
     display: block; /* browser default */
@@ -48,5 +50,5 @@ Mange merkevareannonser består av et enkelt bilde som er tilpasset i høyde og 
 Fra og med 26. august skal bilderbannere (PNG/JPEG/GIF) produseres slik at det fyller hele
 bredden og høyden i portrett, mens det midtstilles i landskap uten skalering. Formatstørrelsen er
 laget med utgangspunkt i iPhone og iPad.
-* Mobil: 310*225 maks 50 KB
-* Tablet: 758*225 maks 100 KB
+* Mobil: 310*225 maks 50 kb
+* Tablet: 758*225 maks 100 kb

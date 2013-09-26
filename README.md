@@ -5,3 +5,4 @@
 
 Check out the [samples](samples) directory for code showing how to create advertisements which follow the specification.
 
+A collection of [tips](tips) is available to help improve the performance of the material being rendered.
