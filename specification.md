@@ -51,4 +51,4 @@ Fra og med 26. august skal bilderbannere (PNG/JPEG/GIF) produseres slik at det f
 bredden og høyden i portrett, mens det midtstilles i landskap uten skalering. Formatstørrelsen er
 laget med utgangspunkt i iPhone og iPad.
 * Mobil: 310*225 maks 50 kb
-* Tablet: 758*225 maks 100 kb
+* Tablet + Inline (desktop): 758*225 maks 100 kb
