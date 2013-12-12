@@ -1,54 +1,56 @@
+## Physical Size
+* Height: 225px
+* Width: 100%
+* Size:
+	- Max 100 kb in compressed state (all files compressed/zipped together).
+	- You can use the JavaScript libraries without counting its size in total size of the banner ad if you use the latest minified version from [Googles CDN service](https://developers.google.com/speed/libraries/devguide#jquery)
 
-## Fysisk størrelse
-* Høyde: 225px
-* Bredde: 100%
-* Størrelse:
-	- Maks 100 kb i arkivert tilstand (alle filer komprimert/zippet sammen).
-	- Du kan benytte jQuery-biblioteket uten å medregne det i størrelsen på reklamen. Men dette krever at du benytter siste versjon av jQuery.min.js fra [Googles CDN-tjeneste](https://developers.google.com/speed/libraries/devguide#jquery) (f.eks [jQuery 2.0.0](http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js))
-
-## Begrensninger
-* Viewport kan ikke settes til device width i reklamen 
+## Limitations
+* Viewport can't be set to device width in the ad
 
 		<meta name="viewport" content="width=devicewidth">
 
-* Bruk av innebygd geo-lokasjon er ikke tillatt
-* HTML-filen skal kun bestå av én fil som inkluderer all css
-* Maksimum 2 requests til JavaScript-bibliotek (en lokal og en ekstern).
-* Animasjon i reklamen før bruker har interagert med den, må være av typen CSS3 (dvs GPU-basert). For tutorial og eksempler på CSS3-animasjoner, se [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Using_CSS_animations)
- * JavaScript-animasjon (eks jQuery.animate eller kall til setTimeout) er ikke tillatt før bruker berører reklamen (for eksempel på sveip eller berøring)
- * Bruk av _requestAnimationFrame_ kan ikke brukes, da det ødelegger interaksjon på sider der banneren inkluderes
-* Referanser til ressurser må ha http:// og ikke // pga begrensninger i leveransesystemet
+* You can not use the Geo Location APIs
+* The HTML-file should just be one file with all CSS required for the ad inline in the HTML.
+* [Maximum of two HTTP requests to JavaScript libraries (one local and on external).](spec/maximumhttprequests.md)
 
-## Klikkteller:
-Legges inn av annonseutvikler og følgende metode må brukes:
+* [Animation which before an user interaction must be written in CSS](spec/cssforanimations.md)
+ * [JavaScript animations are forbidden before an user interaction](spec/jsanimations.md).
+ * You can not use of _requestAnimationFrame_ as it break features in the host document.
+* References to resources must start with http:// or https:// , not only //. Because of limitations in our delivery system.
+
+## Click counter:
+You must use the following method when adding clicks to the ad:
 
 	<div id="Banner" data-responsive="225h" onclick="window.open('http://www.url.no','new_window');">
 
-## Default styling av Banner
+## Default styling of Banner
 
-CSS regler skal kun settes på klasser eller IDer. Det er ikke lov å angi stiler direkte på elementer slik som for eksempel span eller div.
+CSS rules can only be set to classes or IDs. You can not set rules directly to elements like span or div.
 
-div-elementet skal kun ha følgende styling:
+The div element should only have the following styling:
 
     display: block; /* browser default */
     position: static; /* browser default */
     width: 100%;
     height: 225px;
 
-Er det behov for annen styling på elementet, bruk en ny div/element inni Banner. f.eks.
+Additional styling must be done on a new div/element within that container (ex Banner in the sample below).
 
     <div id="Banner" data-responsive="225h" onclick="window.open('http://www.url.no','new_window');" style="display:block;width:100%;height: 225px;">
         <div style="position:relative;"></div>
     </div>  
 
-# Tredjepartskode
-* Sendes over som Javascript-kode
+Read additional [styling tips](stylingingtips.md).
 
-## Bruk av gamle formater
-Mange merkevareannonser består av et enkelt bilde som er tilpasset i høyde og bredde til forskjellige formater (f.eks. én grafikk tilpasset iPhone og én til iPad).
+# Third party code
+* Must be sent as JavaScript code
 
-Fra og med 26. august skal bilderbannere (PNG/JPEG/GIF) produseres slik at det fyller hele
-bredden og høyden i portrett, mens det midtstilles i landskap uten skalering. Formatstørrelsen er
-laget med utgangspunkt i iPhone og iPad.
-* Mobil: 310*225 maks 50 kb
+## Use of older formats
+Many ads today is only a single image adapted i height/width to different formats (mobile and tablet).
+
+As of 26th of August the image banners(PNG/JPEG/GIF) will be produced to fill the whole width and height in portrait,
+while they will be centered in landscape without scaling. The format size is based on iPhone and iPad.
+* Mobile: 310*225 maks 50 kb
 * Tablet + Inline (desktop): 758*225 maks 100 kb
+
