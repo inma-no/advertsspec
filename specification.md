@@ -1,4 +1,5 @@
-# Format specifications for Inline - FINN.no
+# Specifications for the Inline format - FINN.no
+
 This is the specifications for both the HTML banners and image banners. Inline is an advertising format used across all devices (mobile, tablet and desktop). As for now, HTML is recommended as it will be fully responsive across all screens. 
 
 For advertisers and agencies using AdForm, use [AdForms specifications instead](http://test.adform.com/banners/Specifications/finn/index.htm)
@@ -24,7 +25,7 @@ For advertisers and agencies using AdForm, use [AdForms specifications instead](
  * You can not use of _requestAnimationFrame_ as it break features in the host document.
 * References to resources must start with http:// or https:// , not only //. Because of limitations in our delivery system.
 
-## 3. Click counter:
+## 3. Click counter
 You must use the following method when adding clicks to the ad:
 
 	<div id="Banner" data-responsive="225h" onclick="window.open('http://www.url.no','new_window');">
@@ -52,7 +53,7 @@ Read additional [styling tips](stylingingtips.md).
 ## 5. Third party code
 * Must be sent as JavaScript code
 
-## 6. Use of older formats
+## 6. Older formats
 Many ads today is only a single image adapted i height/width to different formats (mobile and tablet).
 
 As of 26th of August the image banners(PNG/JPEG/GIF) will be produced to fill the whole width and height in portrait,
