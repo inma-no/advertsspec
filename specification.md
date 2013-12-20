@@ -44,7 +44,9 @@ The div element should only have the following styling:
 
 Additional styling must be done on a new div/element within that container (ex Banner in the sample below).
 
-    <div id="Banner" data-responsive="225h" onclick="window.open('http://www.url.no','new_window');" style="display:block;width:100%;height: 225px;">
+    <div id="Banner" data-responsive="225h" 
+    	onclick="window.open('http://www.url.no','new_window');" 
+    	style="display:block;width:100%;height: 225px;">
         <div style="position:relative;"></div>
     </div>  
 
