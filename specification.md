@@ -49,10 +49,10 @@ Additional styling must be done on a new div/element within that container (ex B
 
 Read additional [styling tips](stylingingtips.md).
 
-# Third party code
+## 5. Third party code
 * Must be sent as JavaScript code
 
-## 5. Use of older formats
+## 6. Use of older formats
 Many ads today is only a single image adapted i height/width to different formats (mobile and tablet).
 
 As of 26th of August the image banners(PNG/JPEG/GIF) will be produced to fill the whole width and height in portrait,
