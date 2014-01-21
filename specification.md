@@ -4,12 +4,16 @@ This is the specifications for both the HTML banners and image banners. Inline i
 
 For advertisers and agencies using AdForm, use [AdForms specifications](http://test.adform.com/banners/Specifications/finn/index.htm) under the headline Responsive HTML5. 
 
-## 1. Physical Size
-* Height: 225px
-* Width: 100%
-* Size:
-	- Max 100 kb in compressed state (all files compressed/zipped together).
-	- You can use the JavaScript libraries without counting its size in total size of the banner ad if you use the latest minified version from [Googles CDN service](https://developers.google.com/speed/libraries/devguide#jquery)
+## 1. Dimentions
+
+### Height and width
+* Banner: always 100% width of the page, but has fixed height.
+* Box: a square where the width and height always are equal but the dimentions varies.
+
+### Size
+* Max 100 kb in compressed state (all files compressed/zipped together).
+* You can use JavaScript libraries like jQuery from [Googles CDN service](https://developers.google.com/speed/libraries/devguide#jquery) without its size counting against the total size of the ad.
+* Resources loaded after a user interaction does not count against the total size of the ad.
 
 ## 2. Limitations
 * Viewport can't be set to device width in the ad
