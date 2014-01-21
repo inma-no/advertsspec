@@ -4,11 +4,11 @@ This is the specifications for both the HTML banners and image banners. Inline i
 
 For advertisers and agencies using AdForm, use [AdForms specifications](http://test.adform.com/banners/Specifications/finn/index.htm) under the headline Responsive HTML5. 
 
-## 1. Dimentions
+## 1. Dimensions
 
 ### Height and width
 * Banner: always 100% width of the page, but has fixed height.
-* Box: a square where the width and height always are equal but the dimentions varies.
+* Box: a square where the width and height always are equal but the dimensions varies.
 
 ### Size
 * Max 100 kb in compressed state (all files compressed/zipped together).
