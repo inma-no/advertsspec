@@ -7,8 +7,8 @@ For advertisers and agencies using AdForm, use [AdForms specifications](http://t
 ## 1. Dimensions
 
 ### Height and width
-* Banner: always 100% width of the page, but has fixed height.
-* Box: a square where the width and height always are equal but the dimensions varies.
+* Banner: always 100% width of is content container, but has fixed height.
+* Box: a square where the proportions between the width and height always are equal but the dimensions varies.
 
 ### Size
 * Max 100 kb in compressed state (all files compressed/zipped together).
