@@ -8,7 +8,9 @@ For advertisers and agencies using AdForm, use [AdForms specifications](http://t
 
 ### Height and width
 * Banner: always 100% width of is content container, but has fixed height.
-* Box: a square where the proportions between the width and height always are equal but the dimensions varies.
+  * Currently available formats:
+    * Height: 225px, Width: 100%
+* Box: a square where the proportions between width and height always are equal but the dimensions varies.
 
 ### Size
 * Max 100 kb in compressed state (all files compressed/zipped together).
