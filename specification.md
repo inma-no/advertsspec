@@ -27,7 +27,7 @@ Note: The size limitation is on the initial load. You can lazy load additional c
 * You can not use the Geo Location APIs
 * The HTML-file should just be one file with all CSS required for the ad inline in the HTML.
 * [Maximum of two HTTP requests to JavaScript libraries (one local and on external).](spec/maximumhttprequests.md)
-* [Animation prior to a user interaction must be written using CSS3 Transitions, Transforms and/or Animation](spec/cssforanimations.md)
+* Animation _prior to a user interaction_ must be written using [CSS3 Transitions, Transforms and/or Animation](spec/cssforanimations.md)
  * [JavaScript animations are forbidden before an user interaction](spec/jsanimations.md).
  * You can not use of _requestAnimationFrame_ as it break features in the host document.
 * References to resources must start with http:// or https:// , not only //. Because of limitations in our delivery system.
