@@ -17,14 +17,13 @@ For advertisers and agencies using AdForm, use [AdForms specifications](http://t
 * Resources loaded after a user interaction does not count against the total size of the ad.
 
 Note: The size limitation is on the initial load. You can lazy load additional content, but for the first rendering this is the limit.
-
 ## 2. Limitations
 
 * Viewport can not be set to device width within the ad 
 
 	~~`<meta name="viewport" content="width=devicewidth">`~~
 
-* You can not use the Geo Location APIs
+* You can not use the [Geo Location APIs](spec/geoapi.md)
 * The HTML-file should just be one file with all CSS required for the ad inline in the HTML.
 * [Maximum of two HTTP requests to JavaScript libraries (one local and on external).](spec/maximumhttprequests.md)
 * Animation _prior to a user interaction_ must be written using [CSS3 Transitions, Transforms and/or Animation](spec/cssforanimations.md)
@@ -62,7 +61,7 @@ Additional styling must be done on a new div/element within that container (ex B
         <div style="position:relative;"></div>
     </div>  
 
-Read additional [styling tips](stylingingtips.md).
+Read additional [styling tips](spec/stylingingtips.md).
 
 ## 5. Third party code
 * Must be sent as JavaScript code
