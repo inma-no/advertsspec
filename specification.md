@@ -70,8 +70,5 @@ Read additional [styling tips](spec/stylingingtips.md).
 Many ads today is only a single image adapted i height/width to different formats (mobile and tablet).
 
 As of 26th of August the image banners(PNG/JPEG/GIF) will be produced to fill the whole width and height in portrait,
-while they will be centered in landscape without scaling. The format size is based on iPhone and iPad.
-
-* Mobile: 310*225 maks 50 kb
-* Tablet + Desktop: 758*225 maks 100 kb
+while they will be centered in landscape without scaling.
 
