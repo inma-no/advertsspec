@@ -4,7 +4,7 @@
 
 Check out the [samples](samples) directory for code showing how to create advertisements which follow the specification.
 
-A collection of [tips](tips) is available to help improve the performance of the material being rendered.
+A collection of [tips](tips.md) is available to help improve the performance of the material being rendered.
 
 ## Tools
 *Most of the following examples are Node-based tools. If you haven't used Node before, go to [http://nodejs.org/](http://nodejs.org/) and get started. Most likely it will change your life. Also, if you prefer tools such as Grunt, Gulp or other, many of the tools below have an associated plugin.*
