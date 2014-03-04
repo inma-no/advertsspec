@@ -32,7 +32,7 @@ Note: The size limitation is on the initial load. You can lazy load additional c
 * References to resources must start with http:// or https:// , not only //. Because of limitations in our delivery system.
 * You can not override default touch events.
 * You can not use `touchstart` as an alias for `click`.
-* You can not trigger audio or video resources using `touch` or `mouse` events.
+* You can only trigger audio or video resources using `touch` or `mouse` events.
 
 ## 3. Click counter
 You must use the following method when [adding click tags](spec/clicktag.md) to the ad:
