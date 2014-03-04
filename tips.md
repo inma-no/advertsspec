@@ -28,3 +28,16 @@ Technology such as WebGL or new options in CSS can be used, but you must make su
 * Book: [Even Faster Web Sites](http://shop.oreilly.com/product/9780596522315.do)
 * Book: [High Performance Browser Networking](http://shop.oreilly.com/product/0636920028048.do)
 * Book: [JavaScript: The Good Parts](http://shop.oreilly.com/product/9780596517748.do)
+
+# Tools
+* Most of the following examples are Node-based tools. If you haven't used Node before, go to [http://nodejs.org/](http://nodejs.org/) and get started. Most likely it will change your life. Also, if you prefer tools such as Grunt, Gulp or other, many of the tools below have an associated plugin.*
+
+* [Image-min](https://github.com/kevva/image-min) to minify images.
+* [Html-minifier](https://github.com/kangax/html-minifier) to minify HTML.
+* [Clean-css](https://github.com/GoalSmashers/clean-css) to minify CSS.
+* [UglifyJS](http://lisperator.net/uglifyjs/) to minify Javascript.
+
+Validate your banner using [Page Speed Insights](https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli). This Chrome plugin analyses your page and gives you greate improvement suggestions.
+
+
+Obviously. [devtools.chrome.com](https://developers.google.com/chrome-developer-tools/). #networkTab #emulation #timeline
