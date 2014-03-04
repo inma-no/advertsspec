@@ -12,7 +12,7 @@ For advertisers and agencies using AdForm, use [AdForms specifications](http://t
     * Height: 225px, Width: 100%
 
 ### Size
-* Max 100 kb in compressed state (all files compressed/zipped together).
+* Max 100 kB in compressed state (all files compressed/zipped together).
 * You can use JavaScript libraries like jQuery from [Googles CDN service](https://developers.google.com/speed/libraries/devguide#jquery) without its size counting against the total size of the ad.
 * Resources loaded after a user interaction does not count against the total size of the ad.
 
