@@ -18,7 +18,7 @@ Use [Clean-css](https://github.com/GoalSmashers/clean-css) to minify CSS files.
 
 Use [UglifyJS](http://lisperator.net/uglifyjs/) to make your Javascript look gross (and fast(er)).
 
-Validate your banner using (Page Speed Insights)[https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli]. This Chrome plugin analyses your page and gives you greate improvement suggestions.
+Validate your banner using [Page Speed Insights](https://chrome.google.com/webstore/detail/pagespeed-insights-by-goo/gplegfbjlmmehdoakndmohflojccocli). This Chrome plugin analyses your page and gives you greate improvement suggestions.
 
 
 Obviously. [devtools.chrome.com](https://developers.google.com/chrome-developer-tools/). #networkTab #emulation #timeline
