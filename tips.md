@@ -10,6 +10,7 @@
 # Tips for improved performance
 
 * Keep the number of HTTP requests to a minimum
+* Compress images as much as possible without visible image noise. [PNG](http://youtu.be/cqNTCf6oCJ8) VS [JPEG](http://youtu.be/w655JPmzpUI)
 * On the initial load only use JavaScript to add event listeners
 * Load the scripts last, so text and images show up while scripts are loading
 * When using Web Fonts keep in mind that users might not download the font because of bandwith issues, so make sure the fallback looks good
