@@ -23,7 +23,7 @@ Note: The size limitation is on the initial load. You can lazy load additional c
 
 	~~`<meta name="viewport" content="width=devicewidth">`~~
 
-* You can not use the [Geo Location APIs](spec/geoapi.md)
+* The [Geo Location APIs](spec/geoapi.md) can only be used after a user interaction.
 * The HTML-file should just be one file with all CSS required for the ad inline in the HTML.
 * [Maximum of two HTTP requests to JavaScript libraries (at least one to CDN).](spec/maximumhttprequests.md)
 * Animation _prior to a user interaction_ must be written using [CSS3 Transitions, Transforms and/or Animation](spec/cssforanimations.md)
