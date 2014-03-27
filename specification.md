@@ -67,8 +67,6 @@ Read additional [styling tips](spec/stylingingtips.md).
 * Must be sent as JavaScript code
 
 ## 6. Older formats
-Many ads today is only a single image adapted i height/width to different formats (mobile and tablet).
+Instead of making an HTML-banner, you can deliver an image adapted in height/width to different formats (mobile and tablet). For more information about the different sizes needed, please check the media site for instructions.
 
-As of 26th of August the image banners(PNG/JPEG/GIF) will be produced to fill the whole width and height in portrait,
-while they will be centered in landscape without scaling.
-
+FINN: http://hjemmehos.finn.no/no/kjop_reklameplass/retningslinjer/retningslinjer_bildebannere/
