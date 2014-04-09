@@ -32,7 +32,6 @@ Technology such as WebGL or new options in CSS can be used, but you must make su
 
 # Tools
 * Most of the following examples are Node-based tools. If you haven't used Node before, go to [http://nodejs.org/](http://nodejs.org/) and get started. Most likely it will change your life. Also, if you prefer tools such as Grunt, Gulp or other, many of the tools below have an associated plugin.*
-
 * [Image-min](https://github.com/kevva/image-min) to minify images.
 * [Html-minifier](https://github.com/kangax/html-minifier) to minify HTML.
 * [Clean-css](https://github.com/GoalSmashers/clean-css) to minify CSS.
@@ -42,3 +41,10 @@ Validate your banner using [Page Speed Insights](https://chrome.google.com/webst
 
 
 Obviously. [devtools.chrome.com](https://developers.google.com/chrome-developer-tools/). #networkTab #emulation #timeline
+
+#Accessibility
+
+Making content accessible to everyone is encouraged. Good accessibility can help people with disabilities (e.g. blindness and low vision, hearing loss, learning disabilities and limited movement) perceive content in a meaningful way.
+
+* [Web Content Accessibility Guidelines (WCAG) 2.0 Overview](http://www.w3.org/WAI/intro/wcag.php)
+* [Accessible Rich Internet Applications (WAI-ARIA) Overview](http://www.w3.org/WAI/intro/aria)
