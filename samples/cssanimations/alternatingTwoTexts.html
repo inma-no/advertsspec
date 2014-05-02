@@ -7,9 +7,6 @@
     Please note that doctype, html, head, body tags can not be used in a production banner
     -->
     <style>
-    body, html {
-        background: #fff
-    }
 
     .container {
         display: block;
@@ -25,7 +22,6 @@
     .container>* {
         position: absolute;
     }
-    img {border:0px;}
 
     .animItem {
         top: 50%;
@@ -37,19 +33,19 @@
         text-decoration: none;
         opacity: 0;
 
-        -webkit-animation-name: fade;
+        -webkit-animation-name: textOne;
         -webkit-animation-duration: 6s;
         -webkit-animation-timing-function: ease; 
         -webkit-animation-delay:.3s;
         -webkit-animation-iteration-count: infinite;
 
-        -moz-animation-name: fade;
+        -moz-animation-name: textOne;
         -moz-animation-duration: 6s;
         -moz-animation-timing-function: ease; 
         -moz-animation-delay:.3s;
         -moz-animation-iteration-count: infinite;
 
-        animation-name: fade;
+        animation-name: textOne;
         animation-duration: 6s;
         animation-timing-function: ease; 
         animation-delay:.3s;
@@ -66,24 +62,39 @@
         width: 500px;
         margin-left: -250px;
         margin-top: -60px;
+        opacity: 0
     }
     .animReverse {
-        -webkit-animation-direction: reverse;
-        -moz-animation-direction: reverse;
-        animation-direction: reverse;
+        -webkit-animation-name: textTwo;
+        -moz-animation-name: textTwo;
+        animation-name: textTwo;
+
     }
     
-    @-webkit-keyframes fade {
+    @-webkit-keyframes textOne {
         0%,50%,100% { opacity: 0;}
         10%,45% { opacity: 1;}
     }
-    @-moz-keyframes fade {
+    @-moz-keyframes textOne {
         0%,50%,100% { opacity: 0;}
         10%,45% { opacity: 1;}
     }
-    @keyframes fade {
+    @keyframes textOne {
         0%,50%,100% { opacity: 0;}
         10%,45% { opacity: 1;}
+    }
+
+    @-webkit-keyframes textTwo {
+        55%,95% { opacity: 1;}
+        10%,50% { opacity: 0;}
+    }
+    @-moz-keyframes textTwo {
+        55%,95% { opacity: 1;}
+        10%,50% { opacity: 0;}
+    }
+    @keyframes textTwo {
+        55%,95% { opacity: 1;}
+        10%,50% { opacity: 0;}
     }
 
 
