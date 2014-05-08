@@ -17,6 +17,7 @@ For advertisers and agencies using AdForm, use [AdForms specifications](http://t
 * Resources loaded after a user interaction does not count against the total size of the ad.
 
 Note: The size limitation is on the initial load. You can lazy load additional content, but for the first rendering this is the limit.
+
 ## 2. Limitations
 
 * Viewport can not be set to device width within the ad 
@@ -40,6 +41,8 @@ You must use the following method when [adding click tags](spec/clicktag.md) to 
 	<div id="Banner" data-responsive="225h" onclick="window.open('http://www.url.no','new_window');">
 
 Or alternativly you can add an event listener using JavaScript.
+
+Note: [Paid links are required by Google](https://support.google.com/webmasters/answer/96569?hl=en) to have the attribute `rel="nofollow"`
 
 ## 4. Default styling of Banner
 
