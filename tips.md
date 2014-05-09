@@ -13,13 +13,25 @@
 * Compress images as much as possible without visible image noise. [PNG](http://youtu.be/cqNTCf6oCJ8) VS [JPEG](http://youtu.be/w655JPmzpUI)
 * On the initial load only use JavaScript to add event listeners
 * Load the scripts last, so text and images show up while scripts are loading
-* When using Web Fonts keep in mind that users might not download the font because of bandwith issues, so make sure the fallback looks good
 * For smooth CSS-animations, [only animate position, scale, rotaion and opacity](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
 * [How Browsers Work](http://www.html5rocks.com/en/tutorials/internals/howbrowserswork/)
+
+# What about Web Fonts?
+
+When using Web Fonts keep in mind that users might not download the font because of bandwith issues, so make sure the fallback looks good. Design a version which looks good with the fallback version, then make sure the Web Font version also looks good.
+
 
 # What about new APIs and features in browsers?
 
 Technology such as WebGL or new options in CSS can be used, but you must make sure that it has a built in fallback for mobile and legacy browsers.
+
+# How do I make animations work in Internet Explorer <= 9?
+
+You can use IE conditional comments to load JavaScript only in IE
+
+    <!--[if lte IE 9]>
+      <script src="ie-fallback.js"></script>
+    <![endif]-->
 
 # Useful resources
 * [HTML5 rocks](http://www.html5rocks.com/) for lots of articles about HTML5 (by Google)
