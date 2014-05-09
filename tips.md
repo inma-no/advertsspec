@@ -10,7 +10,7 @@
 # Tips for improved performance
 
 * Keep the number of HTTP requests to a minimum
-* Compress images as much as possible without visible image noise. [PNG](http://youtu.be/cqNTCf6oCJ8) VS [JPEG](http://youtu.be/w655JPmzpUI)
+* Compress images as much as possible without visible image noise. [PNG](http://youtu.be/cqNTCf6oCJ8) VS [JPEG](http://youtu.be/w655JPmzpUI). With tools such as [Tinypng](https://tinypng.com/)
 * On the initial load only use JavaScript to add event listeners
 * Load the scripts last, so text and images show up while scripts are loading
 * For smooth CSS-animations, [only animate position, scale, rotaion and opacity](http://www.html5rocks.com/en/tutorials/speed/high-performance-animations/)
