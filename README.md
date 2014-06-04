@@ -1,6 +1,9 @@
-# Advertising Format Specification
 
-This is the common specification(specification.md) for HTML advertising formats.
+[![INMA Logo](inma.png)]
+
+# INMA Advertising Format Specification
+
+This is the specification(specification.md) for HTML advertising formats.
 
 ### Samples code for banners 
 
@@ -12,4 +15,4 @@ A collection of [tips](tips.md) is available to help improve the performance of 
 
 ### Contributing
 
-We welcome all contributions, so just [submit issues](https://github.com/finn-no/advertsspec/issues) or send us pull requests!
+We welcome all contributions, so just [submit issues](https://github.com/inma-no/advertsspec/issues) or send us pull requests!
