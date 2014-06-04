@@ -2,13 +2,11 @@
 
 This is the specification for both the HTML banners and image banners. Inline is an advertising format used across all devices (mobile, tablet and desktop). As for now, HTML is recommended as it will be fully responsive across all screens. 
 
-For advertisers and agencies using AdForm, use [AdForms specifications](http://test.adform.com/banners/Specifications/finn/index.htm) under the headline Responsive HTML5. 
-
 ## 1. Dimensions
 
 ### Height and width
-* Banner: always 100% width of is content container, but has fixed height.
-  * Currently available formats:
+* Banner: always 100% width of is content container, but has *fixed height*.
+  * Currently defined formats:
     * Height: 225px, Width: 100%
 
 ### Size
