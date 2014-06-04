@@ -1,6 +1,6 @@
 # Advertising Format Specification
 
-This is the common specification for [Advertising Formats Specification](specification.md) for all advertising formats used by FINN.no.
+This is the common specification(specification.md) for HTML advertising formats.
 
 ### Samples code for banners 
 
