@@ -1,5 +1,4 @@
-
-[![INMA Logo](inma.png)]
+![INMA Logo](inma.png)
 
 # INMA Advertising Format Specification
 
