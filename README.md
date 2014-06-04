@@ -2,7 +2,7 @@
 
 # INMA Advertising Format Specification
 
-This is the specification(specification.md) for HTML advertising formats.
+This is the [specification](specification.md) for HTML advertising formats.
 
 ### Samples code for banners 
 
