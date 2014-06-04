@@ -22,13 +22,13 @@ Note: The size limitation is on the initial load. You can lazy load additional c
 
 	~~`<meta name="viewport" content="width=devicewidth">`~~
 
-* The [Geo Location APIs](spec/geoapi.md) can only be used after a user interaction.
-* The HTML-file should just be one file with all CSS required for the ad inline in the HTML.
+* The [Geo Location APIs](spec/geoapi.md) or other "HTML5"-APIs that require user confirmation, can only be used after a user interaction.
+* The HTML-file delivered should just be _one file_ with all CSS required for the ad inline in the HTML.
 * [Maximum of two HTTP requests to JavaScript libraries (at least one to CDN).](spec/maximumhttprequests.md)
 * Animation _prior to a user interaction_ must be written using [CSS3 Transitions, Transforms and/or Animation](spec/cssforanimations.md)
  * [JavaScript animations are forbidden before an user interaction](spec/jsanimations.md).
  * You can not use of _requestAnimationFrame_ as [it break features in the host document](http://youtu.be/cgcue5_--SY).
-* References to resources must start with http:// or https:// , not only //. Because of limitations in our delivery system.
+* References to resources must be absolute and start with http:// or https:// , not only //. Because of limitations in our delivery system.
 * You can not override default touch events.
 * You can not use `touchstart` as an alias for `click`.
 * You can only trigger audio or video resources using `touch` or `mouse` events.
