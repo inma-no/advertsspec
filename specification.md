@@ -28,7 +28,7 @@ Note: The size limitation is on the initial load. You can lazy load additional c
 * Animation _prior to a user interaction_ must be written using [CSS3 Transitions, Transforms and/or Animation](spec/cssforanimations.md)
  * [JavaScript animations are forbidden before an user interaction](spec/jsanimations.md).
  * You can not use of _requestAnimationFrame_ as [it break features in the host document](http://youtu.be/cgcue5_--SY).
-* References to resources must be absolute and start with http:// or https:// , not only //. Because of limitations in our delivery system.
+
 * You can not override default touch events.
 * You can not use `touchstart` as an alias for `click`.
 * You can only trigger audio or video resources using `touch` or `mouse` events.
