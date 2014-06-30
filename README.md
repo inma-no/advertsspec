@@ -6,7 +6,7 @@ This is the [specification](specification.md) for HTML advertising formats.
 
 ### Samples code for banners 
 
-Check out the [samples](samples) directory for code showing how to create advertisements which follow the specification.
+Check out the [samples repository](https://github.com/inma-no/advertsspec-samples) for code showing how to create advertisements which follow the specification.
 
 ### Tips
 
