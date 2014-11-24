@@ -70,5 +70,6 @@ Read additional [styling tips](spec/stylingingtips.md).
 ## 6. Older formats
 Instead of making an HTML-banner, you can deliver an image adapted in height/width to different formats (mobile and tablet). For more information about the different sizes needed, please check the media site for instructions.
 
-FINN: http://hjemmehos.finn.no/no/kjop_reklameplass/retningslinjer/retningslinjer_bildebannere/
+FINN: http://hjemmehos.finn.no/no/kjop_reklamebanner/retningslinjer/retningslinjer_bildebannere/
+
 Aftenposten: http://bedrift.aftenposten.no/annonsere/vare-produkter/
