@@ -7,7 +7,7 @@ This is the specification for both the HTML banners and image banners. Inline is
 ### Height and width
 * Banner: always 100% width of is content container, but has *fixed height*.
   * Currently defined formats:
-    * Height: 225px, Width: 100%
+    * Height: 250px, Width: 100%
 
 ### Size
 * Max 100 kB in compressed state (all files compressed/zipped together).
@@ -51,14 +51,13 @@ The div element should only have the following styling:
     display: block; /* browser default */
     position: static; /* browser default */
     width: 100%;
-    height: 225px;
+    height: 250px;
     cursor: pointer;
 
 Additional styling must be done on a new div/element within that container (ex Banner in the sample below).
 
-    <div id="Banner" data-responsive="225h" 
-    	onclick="window.open('http://www.url.no','new_window');" 
-    	style="display:block;width:100%;height: 225px;">
+    <div id="Banner" onclick="window.open('http://www.url.no','new_window');" 
+    	style="display:block;width:100%;height: 250px;">
         <div style="position:relative;"></div>
     </div>  
 
