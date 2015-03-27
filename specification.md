@@ -63,8 +63,11 @@ Additional styling must be done on a new div/element within that container (ex B
 
 Read additional [styling tips](spec/stylingingtips.md).
 
-## 5. Third party code
+## 5. Banner delivery
+Banners should be delivered in a zip file with a flat file structrue, no folders. Name the HTML file index.html. This to ensure best possible support for adservers.
+
+## 6. Third party code
 * Must be sent as JavaScript code
 
-## 6. Older formats
+## 7. Older formats
 Instead of making an HTML-banner, you can deliver an image adapted in height/width to different formats (mobile and tablet). For more information about the different sizes needed, please check the media site for instructions.
