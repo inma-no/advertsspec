@@ -36,7 +36,7 @@ Note: The size limitation is on the initial load. You can lazy load additional c
 ## 3. Click counter
 You must use the following method when [adding click tags](spec/clicktag.md) to the ad:
 
-	<div id="Banner" data-responsive="225h" onclick="window.open('http://www.url.no','new_window');">
+	<div id="Banner" onclick="window.open('http://www.url.no','new_window');">
 
 Or alternativly you can add an event listener using JavaScript.
 
