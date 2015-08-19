@@ -11,7 +11,7 @@ This is the specification for both the HTML banners and image banners. Inline is
 
 ### Size
 * Max 100 kB in compressed state (all files compressed/zipped together).
-* You can use JavaScript libraries like jQuery from [Googles CDN service](https://developers.google.com/speed/libraries/devguide#jquery) without its size counting against the total size of the ad.
+* You can use the two latest minor versions of jQuery from [Googles CDN service](https://developers.google.com/speed/libraries/devguide#jquery) without its size counting against the total size of the ad. 
 * Resources loaded after a user interaction does not count against the total size of the ad.
 
 Note: The size limitation is on the initial load. You can lazy load additional content, but for the first rendering this is the limit.
