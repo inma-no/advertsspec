@@ -34,11 +34,10 @@ Note: The size limitation is on the initial load. You can lazy load additional c
 * Only trigger audio or video resources using `touch` or `mouse` events.
 
 ## 3. Click counter
-You must use the following method when [adding click tags](spec/clicktag.md) to the ad:
 
-	<div id="Banner" onclick="window.open('http://www.url.no','new_window');">
+For click handling, check with the host site or media agency what system the HTML creative will run on. Each system has a different way to handle click in HTML creatives.
 
-Or alternativly you can add an event listener using JavaScript.
+Common for all clicks is that target needs to be set to _blank, the rest varies.
 
 Note: [Paid links are required by Google](https://support.google.com/webmasters/answer/96569?hl=en) to have the attribute `rel="nofollow"`
 
