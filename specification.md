@@ -11,7 +11,9 @@ This is the specification for both the HTML banners and image banners. Inline is
 
 ### Size
 * Max 100 kB in compressed state (all files compressed/zipped together).
-* You can use the two latest minor versions of jQuery from [Googles CDN service](https://developers.google.com/speed/libraries/devguide#jquery) without its size counting against the total size of the ad. 
+ * You can use the two latest minor versions of jQuery from [Googles CDN service](https://developers.google.com/speed/libraries/devguide#jquery) without its size counting against the total size of the ad. 
+ * Use of GSAP with the cloudflare CDN won't count against total ad size. 
+  * `<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>`
 * Resources loaded after a user interaction does not count against the total size of the ad.
 
 Note: The size limitation is on the initial load. You can lazy load additional content, but for the first rendering this is the limit.
@@ -25,7 +27,7 @@ Note: The size limitation is on the initial load. You can lazy load additional c
 * The [Geo Location APIs](spec/geoapi.md) or other "HTML5"-APIs that require user confirmation, can only be used after a user interaction.
 * The HTML-file delivered should just be _one file_ with all CSS required for the ad inline in the HTML.
 * [Maximum of two HTTP requests to JavaScript libraries (at least one to CDN).](spec/maximumhttprequests.md)
-* Animation _prior to a user interaction_ must be written using [CSS3 Transitions, Transforms and/or Animation](spec/cssforanimations.md) or with GSAP library hosted on Cloudfare CDN.
+* Animation _prior to a user interaction_ must be written using [CSS3 Transitions, Transforms and/or Animation](spec/cssforanimations.md) or with GSAP library hosted on Cloudflare CDN.
  * `<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>`
  * [Non GSAP JavaScript animations are forbidden before an user interaction](spec/jsanimations.md).
 * Javascript console methods are not allowed
