@@ -28,7 +28,6 @@ Note: The size limitation is on the initial load. You can lazy load additional c
 * The HTML-file delivered should just be _one file_ with all CSS required for the ad inline in the HTML.
 * [Maximum of two HTTP requests to JavaScript libraries (at least one to CDN).](spec/maximumhttprequests.md)
 * Animation _prior to a user interaction_ must be written using [CSS3 Transitions, Transforms and/or Animation](spec/cssforanimations.md) or with GSAP library hosted on Cloudflare CDN.
- * `<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>`
  * [Non GSAP JavaScript animations are forbidden before an user interaction](spec/jsanimations.md).
 * Javascript console methods are not allowed
 * References to resources must be absolute and start with http:// or https:// , not only //. Because of limitations in our delivery system.
