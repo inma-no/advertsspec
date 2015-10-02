@@ -19,18 +19,18 @@ This is the specification for both the HTML banners and image banners. Inline is
 Note: The size limitation is on the initial load. You can lazy load additional content, but for the first rendering this is the limit.
 
 ## 2. Limitations
-
+* The HTML-file delivered should just be _one file_ with all CSS required for the ad inline in the HTML.
+* References to resources must be absolute and start with https:/ with TLS (not SSL).
+ * Check for a list of [best praticses](https://www.ssllabs.com/ssltest/index.html ) and an easy [server test](https://www.ssllabs.com/projects/best-practices/index.html).
 * Viewport can not be set to device width within the ad 
 
 	~~`<meta name="viewport" content="width=devicewidth">`~~
 
-* The [Geo Location APIs](spec/geoapi.md) or other "HTML5"-APIs that require user confirmation, can only be used after a user interaction.
-* The HTML-file delivered should just be _one file_ with all CSS required for the ad inline in the HTML.
 * [Maximum of two HTTP requests to JavaScript libraries (at least one to CDN).](spec/maximumhttprequests.md)
 * Animation _prior to a user interaction_ must be written using [CSS3 Transitions, Transforms and/or Animation](spec/cssforanimations.md) or with GSAP library hosted on Cloudflare CDN.
  * [Non GSAP JavaScript animations are forbidden before an user interaction](spec/jsanimations.md).
 * Javascript console methods are not allowed
-* References to resources must be absolute and start with http:// or https:// , not only //. Because of limitations in our delivery system.
+* The [Geo Location APIs](spec/geoapi.md) or other "HTML5"-APIs that require user confirmation, can only be used after a user interaction.
 * Only use `event.preventDefault` or `event.stopPropagation` for touch-events moving horizontally +/- 30°.
 * Do not use `touchstart` as an alias for `click`. Because `touchstart` is fired when the user is scrolling.
 * Only trigger audio or video resources using `touch` or `mouse` events.
