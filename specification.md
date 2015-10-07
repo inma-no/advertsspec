@@ -21,7 +21,7 @@ Note: The size limitation is on the initial load. You can lazy load additional c
 ## 2. Limitations
 * The HTML-file delivered should just be _one file_ with all CSS required for the ad inline in the HTML.
 * References to resources must be absolute and start with https:// with TLS (not SSL).
- * The servers used must receive [A-](https://www.ssllabs.com/downloads/SSL_Server_Rating_Guide.pdf) or better in SSL Lab´s [Server Test](https://www.ssllabs.com/projects/best-practices/index.html). See the Server Test result and [SSL Lab´s Best Practices](https://www.ssllabs.com/ssltest/index.html) for tips on what to improve.
+ * The servers used must receive [A-](https://www.ssllabs.com/downloads/SSL_Server_Rating_Guide.pdf) or better in SSL Lab´s [Server Test](https://www.ssllabs.com/ssltest/index.html). See the Server Test result and [SSL Lab´s Best Practices](https://www.ssllabs.com/projects/best-practices/index.html) for tips on what to improve.
 * Viewport can not be set to device width within the ad 
 
 	~~`<meta name="viewport" content="width=devicewidth">`~~
